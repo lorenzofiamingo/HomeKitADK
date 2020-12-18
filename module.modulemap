@@ -1,0 +1,6 @@
+
+
+module HomeKitADK {
+  header "HAP/HAP.h"
+  export *
+}
