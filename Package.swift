@@ -4,8 +4,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "HomeKitADK"
+    name: "HomeKitADK",
+    products: [
+        .library(name: "HomeKitADK", targets: [
+            "HAP"
+        ])
+    ],
+    targets: [
+        .target(
+            name: "HAP",
+            //dependencies: <#T##[Target.Dependency]#>,
+            path: ""
+            //exclude: <#T##[String]#>,
+            //resources: <#T##[Resource]?#>,
+            //publicHeadersPath: "HAP.h"
+            //cSettings: <#T##[CSetting]?#>,
+            //cxxSettings: <#T##[CXXSetting]?#>,
+            //swiftSettings: <#T##[SwiftSetting]?#>,
+            //linkerSettings: <#T##[LinkerSetting]?#>
+        )
+    ]
 )
-
-
-//.target(name: <#T##String#>, dependencies: <#T##[Target.Dependency]#>, path: <#T##String?#>, exclude: <#T##[String]#>, sources: <#T##[String]?#>, resources: <#T##[Resource]?#>, publicHeadersPath: <#T##String?#>, cSettings: <#T##[CSetting]?#>, cxxSettings: <#T##[CXXSetting]?#>, swiftSettings: <#T##[SwiftSetting]?#>, linkerSettings: <#T##[LinkerSetting]?#>)
